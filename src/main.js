@@ -23,7 +23,7 @@ const render = ()=>{
         <div class="link">${simplifyUrl(node.url)}</div>
         </div>
         <div class='close'>
-        <img src='images/delete.png'></img>
+        <img src='../src/images/delete.png'></img>
         </div>
     </li>`).insertBefore($lastLi)
         $li.on('click',()=>{
