@@ -1,0 +1,141 @@
+/* css reset */
+*{
+   box-sizing: border-box;
+}
+*:before,*:after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* style */
+body{
+    background-color: #eee;
+}
+@media (min-width:500px){
+    .globeHeader{
+        margin: 100px 0;
+    }
+}
+.searchForm{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 500px){
+    .searchForm{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.searchForm input{
+    width: 100%;
+    border: 1px solid #0D99FF;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.searchForm button{
+    margin-left: 10px;
+    white-space: nowrap;
+    background-color: #0D99FF;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding:   15px 25px;
+    border-radius: 10px;
+}
+.globeMain{
+
+}
+@media (min-width:500px) {
+    .globeMain{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.globeMain > .siteList{
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (min-width:500px){
+    .globeMain > .siteList {
+        justify-content: flex-start;
+        margin-left: 0px;
+        margin-right: -25px;   
+    }
+}
+
+.globeMain  li{
+    margin-bottom: 10px;
+    position: relative;
+}
+@media (min-width: 500px) {
+    .globeMain  li{
+        margin-bottom: 10px;
+        margin-right: 25px;
+    }
+}
+.globeMain .site{
+    background-color: #fff;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+}
+.globeMain .logo{
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.globeMain .link{
+    font-size: 15px;
+}
+.globeMain .close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+}
+@media (min-width:500px) {
+    .globeMain .close{
+        display: none;
+    }
+}
+@media (min-width:500px) {
+    .globeMain li:hover >.close {
+        display: block;
+    }
+}
+.globeMain .addButton{
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
